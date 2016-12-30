@@ -38,9 +38,9 @@ void loop() {
   for(int i=0;i<NUMPIXELS;i++){
     // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
     if (count %2 == 0) {
-      pixels.setPixelColor(i, pixels.Color(255,255,255)); // Moderately bright green color.
+      pixels.setPixelColor(i, pixels.Color(0,168,255)); // pure blue color, 473nm light
     } else {
-      pixels.setPixelColor(i, pixels.Color(0,0,0)); // Moderately bright green color.
+      pixels.setPixelColor(i, pixels.Color(0,0,0)); // Black color here
     }
   }
   pixels.show(); // This sends the updated pixel color to the hardware.
